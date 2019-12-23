@@ -1,5 +1,5 @@
 version: 2
- jobs:
+ job:
    one:
      docker:
        - image: circleci/ruby:2.4.1
@@ -17,6 +17,6 @@ version: 2
  workflows:
    version: 2
    one_and_two:
-     jobs:
+     job:
        - one
        - two
